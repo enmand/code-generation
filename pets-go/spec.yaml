@@ -1,0 +1,12 @@
+dog:
+  speaks: bark
+  walkable: true
+cat:
+  speaks: meow
+  walkable: false
+horse:
+  speaks: neigh
+  walkable: true
+parrot:
+  speaks: english?
+  walkable: false

@@ -36,13 +36,13 @@ class Something {
         this.y = "world";
     }
 
-    __constructor(x = undefined, y = undefined) {
-        if (!is_null(x)) {
-            this.x = x;
+    __constructor(ix = undefined, iy = undefined) {
+        if (undefined !== ix) {
+            this.x = ix;
         }
 
-        if (!is_null(y)) {
-            this.y = y;
+        if (undefined !== iy) {
+            this.y = iy;
         }
     }
 
@@ -52,5 +52,5 @@ class Something {
 
 };
 
-var s = new Something(1, 2);
+var s = new Something();
 console.log(s.getX() + " " + s.y);

@@ -33,13 +33,13 @@ class Something {
     private $x = "hello";
     public $y = "world";
 
-    function __constructor($x = null, $y = null) {
-        if(!is_null($x)) {
-            $this->x = $x;
+    function __constructor($ix = null, $iy = null) {
+        if(isset($ix)) {
+            $this->x = $ix;
         }
 
-        if(!is_null($y)) {
-            $this->y = $y;
+        if(isset($iy)) {
+            $this->y = $iy;
         }
     }
 
@@ -48,5 +48,5 @@ class Something {
     }
 }
 
-$s = new Something(1, 2);
+$s = new Something();
 $console->log($s->getX() . " " . $s->y);

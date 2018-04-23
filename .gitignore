@@ -1,3 +1,4 @@
 bin
+phpjs/js
 phpjs/node_modules
 pets-go/vendor

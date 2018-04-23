@@ -5,9 +5,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-      "php": "php lol.php",
-      "javascript": "npm run transpile && node loljs/lol.js",
-      "transpile": "babel lol.php -d loljs"
+      "php": "php phpjs.php",
+      "javascript": "npm run transpile && node js/phpjs.js",
+      "transpile": "babel phpjs.php -d js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
